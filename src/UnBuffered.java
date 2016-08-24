@@ -19,7 +19,6 @@ public class UnBuffered {
             rant.nextBytes(bytes);
 
             for(int i=0; i<Constants.filesize; i++){
-                //rant.nextBytes(bytes);
                 for(int j=0; j<bytes.length; j++){
                     fos.write(bytes[j]);    //Skriv en stribe tilfældige char.
                 }

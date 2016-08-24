@@ -5,7 +5,7 @@ import java.util.Random;
  * Created by tomas on 10/29/15.
  */
 public class Buffered {
-    private byte[] bytes = new byte[1024];
+    byte[] bytes = new byte[1024];
 
     public void write(){
         BufferedOutputStream bfos = null;
@@ -16,10 +16,11 @@ public class Buffered {
             bfos = new BufferedOutputStream(new FileOutputStream(Constants.filename));
 
             for(int i=0; i<Constants.filesize; i++){
-                //rant.nextBytes(bytes);
+                rant.nextBytes(bytes);
                 for( int j=0; j<bytes.length; j++){
                     bfos.write(bytes[j]);    //Skriv en tilfældig char.
                 }
+
             }
         } catch(IOException ioe){
             System.out.println("Der skete en fejl: ioe " + ioe);

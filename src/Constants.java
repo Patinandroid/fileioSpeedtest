@@ -5,5 +5,5 @@
  */
 public class Constants {
     public static final String filename = "iospeedtest.txt";
-    public static final int filesize = 10;  //Filesize in kebibytes
+    public static final int filesize = 1;  //Filesize in kebibytes
 }
